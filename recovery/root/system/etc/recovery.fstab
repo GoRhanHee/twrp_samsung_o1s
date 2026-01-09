@@ -8,7 +8,7 @@
 /metadata           ext4      /dev/block/bootdevice/by-name/metadata           flags=display="Metadata";backup=1
 /data               f2fs      /dev/block/bootdevice/by-name/userdata           flags=display="Data";backup=1;wipeingui
 /cache              ext4      /dev/block/bootdevice/by-name/cache              flags=display="Cache";backup=1
-/efs                ext4      /dev/block/bootdevice/by-name/sec_efs            flags=display="EFS";backup=1
+/efs                ext4      /dev/block/bootdevice/by-name/efs            flags=display="EFS";backup=1
 /sec_efs            ext4      /dev/block/bootdevice/by-name/sec_efs            flags=display="Sec EFS";backup=1
 /modem		        emmc	  /dev/block/bootdevice/by-name/radio	           flags=display="Modem";backup=1
 /misc               emmc      /dev/block/bootdevice/by-name/misc               flags=display="Misc";backup=1
