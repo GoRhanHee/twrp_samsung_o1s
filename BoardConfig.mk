@@ -90,6 +90,9 @@ PLATFORM_VERSION := 16.1.0
 # Verified Boot
 BOARD_AVB_ENABLE := false
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+
 # TWRP Configuration
 TW_DEVICE_VERSION := GoRhanHee
 TW_THEME := portrait_hdpi
