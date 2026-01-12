@@ -57,6 +57,7 @@ endif
 
 # Kernel modules
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -90,7 +91,12 @@ PLATFORM_VERSION := 16.1.0
 BOARD_AVB_ENABLE := false
 
 # Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+RECOVERY_SDCARD_ON_DATA := true
+
+# Use mke2fs to create ext4 images
+TARGET_USES_MKE2FS := true
 
 # TWRP Configuration
 TW_DEVICE_VERSION := GoRhanHee
